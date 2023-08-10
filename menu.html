@@ -23,7 +23,7 @@
       <div class="container d-flex justify-content-center align-items-center">
         <div class="navbar-brand d-flex flex-row align-items-center">
           <img
-            src="/TicTacToe/img/dog.png"
+            src="/TicTactoe-game/img/dog.png"
             alt="Logo"
             width="50"
             height="50"
@@ -32,7 +32,7 @@
           <h2 class="textColor1 h1">DOGS VS CATS</h2>
 
           <img
-            src="/TicTacToe/img/cat.png"
+            src="/TicTacToe-game/img/cat.png"
             alt="Logo"
             width="50"
             height="50"
@@ -56,8 +56,8 @@
         >
           <label for="numberOfplayers"> How many players</label>
           <select name="numberOfplayers" id="" class="w-50 form-select">
-            <option value="1" selected>1 player</option>
-            <option value="2">2 players</option>
+            <option value="1" disabled>1 player</option>
+            <option value="2" selected>2 players</option>
           </select>
         </form>
 
@@ -69,7 +69,7 @@
             <div class="card-body col-12 row justify-content-center">
               <div class="character-img col-5">
                 <img
-                  src="/TicTacToe/img/dog.png"
+                  src="/TicTacToe-game/img/dog.png"
                   alt="dog Image"
                   class="img-fluid"
                 />
@@ -98,7 +98,7 @@
             <div class="card-body col-12 row">
               <div class="character-img col-5">
                 <img
-                  src="/TicTacToe/img/cat.png"
+                  src="/TicTacToe-game/img/cat.png"
                   alt="cat Image"
                   class="img-fluid"
                 />
@@ -145,9 +145,10 @@
         </section>
 
     </main>
-    <footer class="bg-color1 textColor1 text-center">
+    <footer class="bg-color1 textColor1 text-center position-sticky bottom-0 ">
       all rights reserved
     </footer>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -155,5 +156,6 @@
     ></script>
    
     <script src="app.js"></script>
+ 
   </body>
 </html>

@@ -16,8 +16,8 @@ const gameMenu = (() => {
 
   let $startButton = document.querySelector(".start-gameBtn");
 
-  let player1figure = "/TicTacToe/img/dog.png";
-  let player2figure = "/TicTacToe/img/cat.png";
+  let player1figure = "/TicTacToe-game/img/dog.png";
+  let player2figure = "/TicTacToe-game/img/cat.png";
 
   function pointOptions(formValue) {
     if (formValue === 1) {
