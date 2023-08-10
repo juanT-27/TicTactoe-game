@@ -1,0 +1,40 @@
+.board{
+    width: 20rem;
+    gap: .3em;
+    
+}
+
+.space{
+    width: 5em;
+    height: 5em;
+    background-color: rgb(136, 205, 248);
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space:hover{
+    background-color: rgb(135, 135, 233);
+}
+
+@media (min-width: 576px) { 
+.board{
+    width:25.25rem ;
+    gap: .3em;
+}
+    .space{
+        width:7rem;
+        height:7rem;
+    }
+ }
+
+@media (min-width: 768px) { }
+
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) {  }
+
+
+@media (min-width: 1400px) { }
