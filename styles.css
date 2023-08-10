@@ -1,17 +1,92 @@
-.board{
-    width: 20rem;
-    gap: .3em;
+:root{
+    --color1: #2b56c9;
+    --color2: #d996d6;
+    --color3: #d46aac;
+    --color4:  #e2dda5;
+    --blueLigth: #7e9beb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Preahvihear', sans-serif;
+    font-size:1rem ;
+
+}
+
+
+.bg-color1 {background-color:var(--color1);}
+.textColor1{color: var(--color4)}
+
+.bg-color2 {background-color:var(--color3);}
+
+
+
+.bg-color3{background-color:var(--color4);}
+.textColor2{color: var(--color1);}
+
+.bg-bluelight{
+    background-color: var(--blueLigth);
+}
+.textcolor-light{
+    color: var(--blueLigth);
+}
+
+.btn1{
+background-color: var(--color1);
+color: var(--color4) ;
+}
+
+.btn1:hover{
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.btn2{
+    background-color: var(--color1);
+    color: var(--color4);
+}
+
+.btn2:hover{
+background-color: #7e9beb;
+color: var(--color4);
+}
+
+option:hover{
+    background-color: var(--color2);
+}
+
+.toggle-turn{
+    display: none;
+}
+
+
+.displayNone{
+    display: none;
+}
+
+.player1Figure{
     
+    width: 100px;
+    height: 100px;
+    background-color: var(--color4);
+}
+
+.board{
+    gap: .3rem;
 }
 
 .space{
     width: 5em;
     height: 5em;
     background-color: rgb(136, 205, 248);
-    font-size: large;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .space:hover{
@@ -19,7 +94,8 @@
 }
 
 @media (min-width: 576px) { 
-.board{
+
+    .board{
     width:25.25rem ;
     gap: .3em;
 }
@@ -29,7 +105,9 @@
     }
  }
 
-@media (min-width: 768px) { }
+@media (min-width: 768px) {
+  
+ }
 
 
 @media (min-width: 992px) { }
