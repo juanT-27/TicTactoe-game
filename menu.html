@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container d-flex justify-content-center">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/TicTacToe/img/dog.png"
+            alt="Logo"
+            width="40"
+            height="40"
+            class="d-inline-block align-text-top"
+          />
+          DOGS VS CATS
+
+          <img
+            src="/TicTacToe/img/cat.png"
+            alt="Logo"
+            width="40"
+            height="40"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <main class="container-fluid bg-danger vh-100 d-flex  justify-content-center">
+      <section class="container row bg-warning mt-5   justify-content-center">
+        <header class="my-4">
+          <h2 class="h2 col-12 text-center">Select your character</h2>
+        </header>
+
+        <article class="col-12 col-md-5  ">
+            <div class="card row">
+                <div class="card-header col-12 text-center">
+                    DOGS
+                </div>
+                <div class="card-body col-12 row">
+                    <div class="character-img col-5">
+                        <img src="/TicTacToe/img/dog.png" alt="dog Image" class="img-fluid">
+                    </div>
+                    
+                    <div class="col-4 d-flex align-items-center">
+                        <button class=" btn ">Player </button>
+                    </div>
+                    
+                    <div class="col-3 d-flex align-items-center">
+                        <button class=" btn ">AI</button>
+                    </div>
+                </div>
+             
+            </div>
+        </article>
+
+        <article class="col-12 col-md-5 mt-5 mt-md-0 ms-md-2">
+            <div class="card row">
+                <div class="card-header col-12 text-center">
+                    CATS
+                </div>
+                <div class="card-body col-12 row">
+                    <div class="character-img col-5">
+                        <img src="/TicTacToe/img/cat.png" alt="cat Image" class="img-fluid">
+                    </div>
+                    
+                    <div class="col-4 d-flex align-items-center">
+                        <button class=" btn my-auto ">Player </button>
+                    </div>
+                    
+                    <div class="col-3 d-flex align-items-center ">
+                        <button class=" btn mx-auto ">AI</button>
+                    </div>
+                    
+                </div>
+             
+            </div>
+        </article>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="menu.js"></script> -->
+  </body>
+</html>
