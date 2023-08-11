@@ -67,7 +67,7 @@ const gameBoard = (() => {
       space.setAttribute("data-position", el.position);
       space.setAttribute("data-value", el.value);
       board.appendChild(space);
-      return space;
+      
     });
   }
 
@@ -79,7 +79,7 @@ const gameBoard = (() => {
     board.innerHTML = "";
     renderBoard();
   }
-  return { renderBoard, spacesInBoard, restartGame };
+  return { renderBoard};
 })();
 
 const game = (() => {
