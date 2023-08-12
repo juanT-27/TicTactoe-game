@@ -42,8 +42,10 @@
       </div>
     </nav>
 
-    <main class="container-fluid bg-color3 d-flex justify-content-center flex-column">
-      <section class="menu container row mt-3 mx-auto">
+    <main
+      class="container-fluid bg-color3 d-flex justify-content-center flex-column"
+    >
+      <section class="menu container row mt-3 mx-auto" id="menu">
         <header class="my-4">
           <h2 class="h2 col-12 text-center textcolor-light">
             Select your character
@@ -79,13 +81,11 @@
                 <button class="btn btn1 position-relative">Player</button>
                 <span
                   id="p1"
-                  class=" position-absolute top-0 start-50 translate-middle badge rounded-pill bg-color2"
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-color2"
                   >Player 1
                   <span class="visually-hidden">unread messages</span></span
                 >
               </div>
-
-            
             </div>
           </div>
         </article>
@@ -104,12 +104,11 @@
                 />
               </div>
 
-              
               <div class="col-4 d-flex align-items-center position-relative">
                 <button class="btn btn1 position-relative">Player</button>
                 <span
                   id="p2"
-                  class=" position-absolute top-0 start-50 translate-middle badge rounded-pill bg-color2"
+                  class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-color2"
                   >Player 2
                   <span class="visually-hidden">unread messages</span></span
                 >
@@ -119,7 +118,7 @@
                 <button class="btn btn1 position-relative">AI</button>
                 <span
                   id="p2-ai"
-                  class=" toggle-turn top-0 start-50 translate-middle badge rounded-pill bg-color2"
+                  class="toggle-turn top-0 start-50 translate-middle badge rounded-pill bg-color2"
                   >player 2
                   <span class="visually-hidden">unread messages</span></span
                 >
@@ -136,14 +135,18 @@
           >
         </div>
       </section>
-      
-        <section class="container" >
-          <div class="player1Figure ">
-           <img src="/TicTacToe/img/dog.png" alt="" class="img-fluid">
-          </div>
-          <div class=" board mx-auto  mt-5 row justify-content-center" id="boardContainer"> </div>
-        </section>
 
+      <section class="container">
+        <div class="player1Figure">
+          <img src="/TicTacToe/img/dog.png" alt="" class="img-fluid" />
+        </div>
+
+        <div
+          class="board mx-auto mt-5 row justify-content-center"
+          id="boardContainer"
+        ></div>
+        
+      </section>
     </main>
     <footer class="bg-color1 textColor1 text-center">
       all rights reserved
@@ -153,7 +156,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-   
+
     <script src="app.js"></script>
   </body>
 </html>
