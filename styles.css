@@ -16,6 +16,10 @@ body{
 
 }
 
+main{
+    height: 100vh;
+}
+
 
 .bg-color1 {background-color:var(--color1);}
 .textColor1{color: var(--color4)}
