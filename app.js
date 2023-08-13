@@ -41,12 +41,7 @@ const uiGame = (() => {
     menu.classList.toggle("displayNone");
   }
 
-  // startGame listener
-
-  $startGameButton.addEventListener("click", () => {
-    gameFunctions.createSpaces();
-    hidegameMenu();
-  });
+ 
 
   function showValue(spaceNode, objFound) {
     spaceNode.classList.add(objFound);
@@ -60,6 +55,13 @@ const uiGame = (() => {
     }, 300);
   }
 
+   // startGame listener
+
+   $startGameButton.addEventListener("click", () => {
+    gameFunctions.createSpaces();
+    hidegameMenu();
+  });
+
   document.addEventListener("click", (e) => {
     if (e.target.classList.contains("space")) {
       //We get the space position with set attribute
@@ -70,7 +72,7 @@ const uiGame = (() => {
     }
   });
 
-  return { playerTurn, makeMove };
+ return {renderboard, showValue}
 })();
 
 const gameFunctions = (() => {
@@ -100,10 +102,10 @@ const gameFunctions = (() => {
   }
 
   function makeMove(spacePosition, spaceNode) {
-    let spacesArr = arrayOfSpaces;
+   
     let spaceElement = spaceNode;
 
-    let objFound = spacesArr.find(
+    let objFound = arrayOfSpaces.find(
       (el) => el.position === parseInt(spacePosition)
     );
 
