@@ -72,3 +72,84 @@ const uiGame = (() => {
 
   return { playerTurn, makeMove };
 })();
+
+const gameFunctions = (() => {
+  let dog = "player1bg";
+  let cat = "player2bg";
+  let players = [player(1, dog), player(2, cat)];
+  let winCases = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [6, 4, 2]
+  ];
+
+  let currentPlayer = players[0];
+  let arrayOfSpaces;
+
+  function createSpaces() {
+    arrayOfSpaces = Array.from({ length: 9 }, (_, index) => ({
+      position: index,
+      value: "",
+    }));
+    uiGame.renderboard(arrayOfSpaces);
+  }
+
+  function makeMove(spacePosition, spaceNode) {
+    let spacesArr = arrayOfSpaces;
+    let spaceElement = spaceNode;
+
+    let objFound = spacesArr.find(
+      (el) => el.position === parseInt(spacePosition)
+    );
+
+    if (objFound !== undefined && objFound.value === "") {
+      objFound.value = currentPlayer.figure;
+      currentPlayer.selections.push(parseInt(spacePosition))
+     
+
+      uiGame.showValue(spaceElement, currentPlayer.figure);
+      checkWinner(currentPlayer);
+
+      togglePlayer();
+
+    } else {
+      uiGame.invalidMove(spaceElement);
+    }
+  }
+
+  function checkWinner(player){
+   
+    let selections= player.selections
+
+    let winner= winCases.some((cases) => {
+   return cases.every((num)=> selections.includes(num))
+    })
+
+   if(winner){
+    setTimeout(()=>{
+      alert(`Winner player ${player.number}`)
+      createSpaces()
+    }, 300)
+    
+   }else if(selections.length>4){
+     if(!winner){
+      alert("Match Tie")
+      createSpaces()
+     }
+   }
+
+  }
+
+  
+
+  function togglePlayer() {
+    currentPlayer = players.find((player) => player !== currentPlayer);
+  }
+
+  return { currentPlayer, togglePlayer, makeMove, createSpaces };
+})();
