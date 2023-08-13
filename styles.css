@@ -89,6 +89,22 @@ option:hover{
     
 }
 
+.player1bg{
+    background-image: url(/TicTacToe/img/dog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.player2bg{
+    background-image: url(/TicTacToe/img/cat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.notAvailable{
+    background-color: #850b56;
+
+}
 .space:hover{
     background-color: rgb(135, 135, 233);
 }
